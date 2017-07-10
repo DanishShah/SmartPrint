@@ -47,18 +47,25 @@ p{
 }
 
 .kudo{
-	position: relative;
-	display: none;
+	display: block;
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
-	left: 50%;
-	/*transform: translateX(-50%);		*/
 	background-color: #9E9E9E;
-	animation: kudo-anim 3s infinite;
 }
 
 #about{
+
+}
+
+#features{
+	width: 100%;
+	background-image: url(../assets/landing.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;	
+}
+
+#how-to{
 
 }
 
@@ -90,28 +97,15 @@ p{
 	font-weight: 300;
 }
 
-#how-to{
 
+.social-icon{
+	background-color: #E0E0E0;
+	border-radius: 50%;
+	padding: 10px;
+	transition-duration: 0.2s;
+	margin: 3px;
 }
 
-@keyframes kudo-anim{
-	0%{
-		transform: scale(0.7);
-	}
-
-	25%{
-		transform: scale(0.3);	
-	}
-
-	50%{
-		transform: scale(1);
-	}
-
-	75%{
-		transform: scale(0.5);
-	}
-
-	100%{
-		transform: scale(0.7);	
-	}
+.social-icon:hover{
+	background-color: #9E9E9E;
 }
