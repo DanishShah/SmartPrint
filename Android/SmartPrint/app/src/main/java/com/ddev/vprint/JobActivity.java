@@ -83,7 +83,7 @@ public class JobActivity extends AppCompatActivity {
 
     public void getJobs(final String printer_name){
 
-        String url = "http://192.168.0.106:8000/jobs/";
+        String url = "http://192.168.0.104:8000/jobs/";
         final ArrayList<HashMap<String, String>> job_list = new ArrayList<>();
 
         StringRequest request = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {

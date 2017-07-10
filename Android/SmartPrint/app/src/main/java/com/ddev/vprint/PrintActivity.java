@@ -123,7 +123,7 @@ public class PrintActivity extends AppCompatActivity {
             try{
 
                 Socket socket = new Socket();
-                socket.connect(new InetSocketAddress("192.168.0.106", 8000), 5000);
+                socket.connect(new InetSocketAddress("192.168.0.104", 8000), 5000);
                 if (socket.isConnected()) {
                     System.out.println("Connected");
                     socket.close();
@@ -151,7 +151,7 @@ public class PrintActivity extends AppCompatActivity {
 
         final ArrayList<HashMap<String, String>> list = new ArrayList<>();
 
-        String url = "http://192.168.0.106:8000/printers/";
+        String url = "http://192.168.0.104:8000/printers/";
 
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
             @Override
@@ -379,7 +379,7 @@ public class PrintActivity extends AppCompatActivity {
     }
 
     public void setPrinter(final String printer_name){
-        String url = "http://192.168.0.106:8000/set_printer/";
+        String url = "http://192.168.0.104:8000/set_printer/";
 
         StringRequest request = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
@@ -437,7 +437,7 @@ public class PrintActivity extends AppCompatActivity {
 
                     // open a URL connection to the Servlet
                     FileInputStream fileInputStream = new FileInputStream(sourceFile);
-                    URL url = new URL("http://192.168.0.106:8000/upload/");
+                    URL url = new URL("http://192.168.0.104:8000/upload/");
 
                     // Open a HTTP  connection to  the URL
                     conn = (HttpURLConnection) url.openConnection();
