@@ -14,6 +14,10 @@ p{
 	text-align: left;
 }
 
+.row .col.card{
+	padding: 20px;
+}
+
 .center-div{
 	position: relative;
 	left: 50%;
