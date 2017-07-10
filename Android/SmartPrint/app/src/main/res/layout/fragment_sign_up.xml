@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:padding="16dp"
+    android:background="@color/colorPrimary">
+
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VPrint"
+        android:textColor="#fff"
+        android:layout_marginBottom="56dp"
+        android:textSize="36sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sign_up_txt"
+        android:text="Sign Up"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:layout_marginBottom="24dp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintAnimationEnabled="true"
+        app:hintEnabled="true"
+        android:textColorHint="#fff">
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textNoSuggestions|text"
+        android:hint="Username"
+        style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
+        android:textColor="#fff" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintAnimationEnabled="true"
+        app:hintEnabled="true"
+        android:textColorHint="#fff">
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textNoSuggestions|textEmailAddress"
+        android:hint="Email ID"
+        style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
+        android:textColor="#fff" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintAnimationEnabled="true"
+        app:hintEnabled="true"
+        app:passwordToggleEnabled="true"
+        android:textColorHint="#fff">
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
+        android:inputType="textPassword"
+        android:textColor="#fff" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintAnimationEnabled="true"
+        app:hintEnabled="true"
+        app:passwordToggleEnabled="true"
+        android:textColorHint="#fff">
+
+    <EditText
+        android:id="@+id/con_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
+        android:inputType="textPassword"
+        android:textColor="#fff"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorAccent"
+        android:textColor="#000" />
+
+</LinearLayout>
